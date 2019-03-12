@@ -1,0 +1,8 @@
+/**app.wxss**/
+page{
+  background: #ffdeef;
+}
+text{
+  font-size:30rpx;
+  font-family: '苹方';
+}

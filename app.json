@@ -1,0 +1,59 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/order/order",
+    "pages/news-list/news-list",
+    "pages/schedule-introduct/schedule-introduct",
+    "pages/advisoryDetails/advisoryDetails",
+    "pages/my-order/myorder",
+    "pages/take-card/take-card",
+    "pages/school-introduce/school-introduce",
+    "pages/appointment/appointment",
+    "pages/schedule/schedule",
+    "pages/slide_template/slide_template",
+    "pages/center/center",
+    "pages/teacher-team/teacher-team",
+    "pages/recipe/recipe",
+    "pages/teacher-detail/teacher-detail",
+    "pages/discount-ticket/discount-ticket",
+    "pages/receive-ticket/receive-ticket"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ff458c",
+    "navigationBarTitleText": "小鸟智慧校园",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#fff",
+    "backgroundColor": "rgba(255,69,140,0.7)",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/home.png",
+        "selectedIconPath": "icon/home.png"
+      },
+      {
+        "pagePath": "pages/schedule/schedule",
+        "text": "课程",
+        "iconPath": "icon/schedule.png",
+        "selectedIconPath": "icon/schedule.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "预约",
+        "iconPath": "icon/appointment.png",
+        "selectedIconPath": "icon/appointment.png"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "text": "我的",
+        "iconPath": "icon/center.png",
+        "selectedIconPath": "icon/center.png"
+      }
+    ]
+  }
+}
