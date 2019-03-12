@@ -1,0 +1,99 @@
+ <!--pages/order/order.wxml-->
+<view class='container'> 
+  <view class='content'>
+    <form bindsubmit="formSubmit" bindreset="formReset" report-submit='true'> 
+    <!-- <view class='list'>
+      <view class='item'>
+        <text decode='true'>姓&nbsp;&nbsp;&nbsp;名</text>
+        <input type='text' name='username' placeholder='请输入您的真实姓名'></input>
+      </view>
+
+      <view class='item'>
+        <text decode='true'>手机号</text>
+        <input type='text' name='mobile' placeholder='请输入您的手机号'></input>
+      </view>  
+       <view class='item'>
+        <text decode='true'>备注</text>
+        <input type='text' name='remark' placeholder='备注'></input>
+      </view>  
+
+      <button formType="submit" class='btn'>确定预约</button>
+    </view>  -->
+      <view class='title'>
+        <image src='/icon/write.png'></image>
+        <text>请填写您的预约：</text>
+      </view>
+      <view class='list'>
+        <view class='item'>
+          <image src='/icon/name.jpg'></image>
+          <input type='text' name='username' placeholder='姓名（必填）'></input> 
+        </view>
+        <view class='item'>
+          <image src='/icon/phone.jpg'></image>
+          <input type='text' name='mobile' placeholder='电话'></input> 
+        </view>
+        <view class='item'>
+        <image src='/icon/beizhu(2).png'></image>
+        <input type='text' name='remark' placeholder='备注'></input>
+      </view> 
+        <!-- <view class='item'>
+          <image src='/icon/order-time.jpg'></image>
+           <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{time}}">
+            <view class="picker">
+              {{time[index1]}}
+              <image src='/icon/down.png'></image> 
+            </view>
+          </picker> 
+          <input type='text' name='order_time' placeholder='预约时间'></input>
+        </view> -->
+        <!-- <view class='item'>
+          <image src='/icon/order-schedule.jpg'></image>
+           <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{schedule}}">
+            <view class="picker">
+              {{schedule[index2]}}
+              <image src='/icon/down.png'></image>
+            </view>
+          </picker> 
+           <input type='text' name='order_schedule' placeholder='预约课程'></input> 
+        </view> -->
+      </view>
+      <button class='btn' formType="submit">提交</button>
+    </form>  
+  </view> 
+</view>
+
+
+<!--menu菜单  -->
+  <view class='box'> 
+    <view class='menu'>
+      <view hidden='{{currentIndex !=1}}'>
+        <view animation="{{animation1}}" class='menu-item menu-item1' bindtap='showHide1'>
+          <image hidden='{{currentIndex1 !=0}}' src='/icon/menu-item1.png'></image>
+          <image hidden='{{currentIndex1 !=1}}' src='/icon/menu-item1-active.png'></image>
+          <text>学校简介</text>
+        </view>
+        <view animation="{{animation2}}" class='menu-item menu-item2' bindtap='showHide2'>
+          <image hidden='{{currentIndex2 !=0}}' src='/icon/menu-item2.png'></image>
+          <image hidden='{{currentIndex2 !=1}}' src='/icon/menu-item2-active.png'></image>
+          <text>师资团队</text>
+        </view>
+        <view animation="{{animation3}}" class='menu-item menu-item3' bindtap='showHide3'>
+          <image hidden='{{currentIndex3 !=0}}' src='/icon/menu-item3.png'></image>
+          <image hidden='{{currentIndex3 !=1}}' src='/icon/menu-item3-active.png'></image>
+          <text>打卡</text>
+        </view>
+        <view animation="{{animation4}}" class='menu-item menu-item4' bindtap='showHide4'>
+          <image hidden='{{currentIndex4 !=0}}' src='/icon/menu-item4.png'></image>
+          <image hidden='{{currentIndex4 !=1}}' src='/icon/menu-item4-active.png'></image>
+          <text>食谱</text>
+        </view>
+      </view>
+
+      <view class='menu-btn' bindtap='animate'>
+        <image animation="{{animation5}}" hidden='{{currentIndex !=0}}' src='/icon/menu.png'></image>
+        <image animation="{{animation6}}" hidden='{{currentIndex !=1}}' src='/icon/cancel.png'></image>
+      </view>
+        
+    </view>
+  </view>
+  <view class='mask' wx:if='{{currentIndex !=0}}'></view>

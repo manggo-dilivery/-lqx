@@ -1,0 +1,41 @@
+<!--pages/my-order/myorder.wxml-->
+<view class='container'>
+    <view class='title-top'>您的预约结果如下：</view>
+    <view class='list'>
+      
+      <scroll-view scroll-y style='height:900rpx'>
+        <view class='title'>
+          <text>预约时间</text>
+          <text>主讲科目</text>
+          <text>预约老师</text>
+          <!-- <text>日期</text> -->
+        </view>
+        <block wx:for="{{appointment_list}}" wx:key="key">
+          <view class='item'>
+            <text>{{item.createtime}}</text>
+            <text>{{item.subject_name}}</text>
+            <text>{{item.username}}</text>
+            <!-- <text>{{item.username}}</text>
+            <text>{{item.mobile}}</text>
+            <text>{{item.subject_name}}</text>
+            <text>{{item.createtime}}</text> -->
+          </view>
+        </block>
+        <!-- <view class='item'>
+          <text>2017-12-13</text>
+          <text>英语</text>
+          <text>王老师</text>
+        </view>
+        <view class='item'>
+          <text>2017-12-13</text>
+          <text>英语</text>
+          <text>王老师</text>
+        </view>
+        <view class='item'>
+          <text>2017-12-13</text>
+          <text>英语</text>
+          <text>王老师</text>
+        </view> -->
+      </scroll-view>
+    </view>
+</view>

@@ -1,0 +1,30 @@
+<!--pages/advisoryDetails/advisoryDetails.wxml-->
+<import src="/wxParse/wxParse.wxml"/>
+<view class='container'>
+
+<view class='head-title'>
+<text>{{title}}</text>
+</view>
+<view class='head-time'>
+<text>{{time}}</text>
+</view>
+
+<!-- <view class='small-box'>
+<view class='mTop'>
+<image class='image_all' src='/images/banner_1.jpg' mode='widthFix'></image>
+</view>
+<view class='box-size'>
+  <text>气的代大大安市安市打算阿萨德打算打算的撒萨达的撒大萨达安市阿萨德打算就打算打算看见打算奥斯卡大家安市好的开始大会上爱啥啥宽度打算阿萨德大萨达阿萨德打算大飒飒大阿斯打死安市阿斯打死安市啊打算打算安市爱迪生阿萨德我单位单位的伟大的撒安市方法是否 是否是否收到发送到发送到防守打法收到发送到水电费水电费水电费发送到发送到收到发送到发送到收到水电费水电费收到收到放到收到剩多少是发送到方式收到所发生的收到是</text>
+</view>
+<view class='mTop'>
+<image class='image_all' src='/images/banner_2.jpg' mode='widthFix'></image>
+</view>
+<view class='box-size'>
+  <text>气的代大大安市安市打算阿萨德打算打算的撒萨达的撒大萨达安市阿萨德打算就打算打算看见打算奥斯卡大家安市水电费收到收到放到收到剩多少是发送到方式收到所发生的收到是</text>
+</view>
+<view class='mTop'>
+<image class='image_all' src='/images/banner_3.jpg' mode='widthFix'></image>
+</view>
+</view> -->
+  <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>

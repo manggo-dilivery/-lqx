@@ -1,0 +1,131 @@
+/* pages/my-order/myorder.wxss */
+/*教师列表  */
+/* .top{
+  width:100%;
+  height:auto;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  padding-bottom:40rpx;
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left:30rpx;
+  margin-top:30rpx;
+}
+.item image{
+  width:330rpx;
+  height:230rpx;
+} 
+.item text{
+  font-size:28rpx;
+  margin-top:10rpx;
+} */
+
+
+/*点击预约  */
+/* text{
+  font-size:34rpx;
+  color:#222;
+}
+.container{
+  width:100%;
+  height:auto;
+}
+.list{
+  width:100%;
+  height:auto;
+}
+.item{
+  width:90%;
+  height:auto;
+  margin:0 auto;
+  padding:30rpx 0;
+  display:flex;
+  align-items: center;
+  border-bottom:1rpx solid #ddd;
+}
+.item text{
+  margin-left:20rpx;
+}
+.item input{
+  margin-left:40rpx;
+  font-size:34rpx;
+}
+.btn{
+  width:90%;
+  height:80rpx;
+  margin:0 auto;
+  border:none;
+  outline:none;
+  margin-top:50rpx;
+  color:#fff;
+  background: #2dd8ac;
+  line-height:80rpx;
+}
+.btn:active{
+  color:#fff;
+  background: #1cc79b;
+} */
+text{
+  font-size:30rpx;
+  color:#777;
+}
+.container{
+  width:96%;
+  height:auto;
+  margin:0 auto;
+  background: #fdf2f6;
+  padding:50rpx 0;
+  margin-top:20rpx;
+  border-radius:15rpx;
+}
+.title-top{
+  font-size:34rpx;
+  font-weight: bold;
+  text-align: center;
+  color:#444;
+  letter-spacing: 2rpx;
+}
+.list{
+  width:90%;
+  height:900rpx;
+  margin:0 auto;
+  border-radius:15rpx;
+  background: #fff;
+  border:1rpx solid #ddd;
+  margin-top:30rpx;
+  padding-bottom:40rpx;
+}
+
+.item{
+  width:95%;
+  height:auto;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 35rpx 0;
+  border-bottom:1rpx solid #ddd;
+}
+.title{
+  width:95%;
+  height:auto;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 35rpx 0;
+  border-bottom:1rpx solid #ddd;
+ 
+}
+.title text{
+  font-size:34rpx;
+  color:#ff458c;
+}
+.item text{
+  flex:1;
+  text-align: center;
+}

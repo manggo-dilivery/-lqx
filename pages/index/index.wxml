@@ -1,0 +1,128 @@
+  <!--index.wxml-->
+
+<import src='/pages/slide_template/slide_template'/>
+  <view class="container">
+    <template is='slider' data="{{slide_thumbs}}"/>
+    <view class='horn'>
+      <image src='../../icon/horn.png'></image>
+      <text>这里有最新的课程优惠券！赶紧来领吧！</text>
+      <text bindtap='discount_ticket'>领取优惠券</text>
+    </view>
+    <view class='about-us' bindtap='school_introduce'>
+      <view class='about-us-content'>
+        <view class='top-title'>
+          <text>关于我们</text>
+          <image src='/icon/plug.png'></image>
+        </view>
+        <image mode='widthFix' src='/images/intruduct-school.jpg'></image>
+      </view>
+      <view class='about-us-bottom'>
+        <text>学校简介</text>
+      </view>
+    </view>
+    <!--学校课程  -->
+    <view class='school-schedule' bindtap='schedule'>
+      <view class='school-schedule-title'>
+        <view class='top-title'>
+          <text>学校课程</text>
+          <image src='/icon/plug.png'></image>
+        </view>
+      </view>
+      <view class='school-schedule-list'>
+        <image mode='widthFix' src='/images/course01.jpg'></image>
+        <image mode='widthFix' src='/images/course02.jpg'></image>
+        <image mode='widthFix' src='/images/course03.jpg'></image>
+        <image mode='widthFix' src='/images/course04.jpg'></image>
+      </view>
+    </view>
+    <view class='news'  bindtap='news_list'>
+      <view class='school-schedule-title'>
+        <view class='top-title'>
+          <text>新闻动态</text>
+           <image src='/icon/plug.png'></image> 
+        </view>
+      </view>
+      <view class='news-list'>
+        <view class='news-list-item'>
+          <view class='news-list-item-left'>
+            <image src='/icon/dot.png'></image>
+            <text>钢花展演-绽放在青岛的冰山之角</text>
+          </view>
+          <view  class='news-list-item-right' >
+            <image src='/icon/arrow-right.png'></image>
+          </view>
+        </view>
+        <view class='news-list-item'>
+          <view class='news-list-item-left'>
+            <image src='/icon/dot.png'></image>
+            <text>【钢花-家长沟通】</text>
+          </view>
+          <view  class='news-list-item-right'>
+            <image src='/icon/arrow-right.png'></image>
+          </view>
+        </view>
+        <view class='news-list-item'>
+          <view class='news-list-item-left'>
+            <image src='/icon/dot.png'></image>
+            <text>【钢花-招生简章】</text>
+          </view>
+          <view  class='news-list-item-right'>
+            <image src='/icon/arrow-right.png'></image>
+          </view>
+        </view>
+        <view class='news-list-item'>
+          <view class='news-list-item-left'>
+            <image src='/icon/dot.png'></image>
+            <text>【钢花-绽放花开】</text>
+          </view>
+          <view  class='news-list-item-right'>
+            <image src='/icon/arrow-right.png'></image>
+          </view>
+        </view>
+        <view class='news-list-item'>
+          <view class='news-list-item-left'>
+            <image src='/icon/dot.png'></image>
+            <text>【钢花-家长沟通】</text>
+          </view>
+          <view  class='news-list-item-right'>
+            <image src='/icon/arrow-right.png'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+<!--menu菜单  -->
+  <view class='box'> 
+    <view class='menu'>
+      <view hidden='{{currentIndex !=1}}'>
+        <view animation="{{animation1}}" class='menu-item menu-item1' bindtap='showHide1'>
+          <image hidden='{{currentIndex1 !=0}}' src='/icon/menu-item1.png'></image>
+          <image hidden='{{currentIndex1 !=1}}' src='/icon/menu-item1-active.png'></image>
+          <text>学校简介</text>
+        </view>
+        <view animation="{{animation2}}" class='menu-item menu-item2' bindtap='showHide2'>
+          <image hidden='{{currentIndex2 !=0}}' src='/icon/menu-item2.png'></image>
+          <image hidden='{{currentIndex2 !=1}}' src='/icon/menu-item2-active.png'></image>
+          <text>师资团队</text>
+        </view>
+        <view animation="{{animation3}}" class='menu-item menu-item3' bindtap='showHide3'>
+          <image hidden='{{currentIndex3 !=0}}' src='/icon/menu-item3.png'></image>
+          <image hidden='{{currentIndex3 !=1}}' src='/icon/menu-item3-active.png'></image>
+          <text>打卡</text>
+        </view>
+        <view animation="{{animation4}}" class='menu-item menu-item4' bindtap='showHide4'>
+          <image hidden='{{currentIndex4 !=0}}' src='/icon/menu-item4.png'></image>
+          <image hidden='{{currentIndex4 !=1}}' src='/icon/menu-item4-active.png'></image>
+          <text>食谱</text>
+        </view>
+      </view>
+
+      <view class='menu-btn' bindtap='animate'>
+        <image animation="{{animation5}}" hidden='{{currentIndex !=0}}' src='/icon/menu.png'></image>
+        <image animation="{{animation6}}" hidden='{{currentIndex !=1}}' src='/icon/cancel.png'></image>
+      </view>
+        
+    </view>
+  </view>
+  <view class='mask' wx:if='{{currentIndex !=0}}'></view>

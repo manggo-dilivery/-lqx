@@ -1,0 +1,85 @@
+<!--pages/center/center.wxml-->
+<view class='container'>
+
+    <view class='top'>
+      <view class='top-image'>
+        <image src='../../icon/pesonal_bg.jpg'></image>
+      </view>
+    </view>
+
+<!--旺旺头像  -->
+
+    <view class='top-detail'>
+      <image class='portrait' src='{{userinfo.avatarUrl}}'></image>
+      <text>{{userinfo.nickName}}</text>
+      <!-- <image class='icon' src='../../images/arrow.png'></image> -->
+    </view>
+
+    <view class='list'>
+
+      <view class='item'>
+        <view class='item-text' bindtap='order'>
+          <image src='../../icon/center1.png'></image>
+          <text>我的预约</text>
+        </view>
+        <view class='item-icon'>
+          <image src='../../icon/arrow-right.png'></image>
+        </view>
+      </view>
+
+      <view class='item'>
+        <view class='item-text' bindtap='receive_ticket'>
+          <image src='../../icon/center2.png'></image>
+          <text>我的优惠券</text>
+        </view>
+        <view class='item-icon'>
+          <image src='../../icon/arrow-right.png'></image>
+        </view>
+      </view>
+      <view class='item' style='margin-top:20rpx;'>
+        <view class='item-text' bindtap='clockin'>
+          <image src='../../icon/center3.png'></image>
+          <text>打卡记录</text>
+        </view>
+        <view class='item-icon'>
+          <image src='../../icon/arrow-right.png'></image>
+        </view>
+      </view>
+    </view>
+
+</view>
+
+<!--menu菜单  -->
+  <view class='box'> 
+    <view class='menu'>
+      <view hidden='{{currentIndex !=1}}'>
+        <view animation="{{animation1}}" class='menu-item menu-item1' bindtap='showHide1'>
+          <image hidden='{{currentIndex1 !=0}}' src='/icon/menu-item1.png'></image>
+          <image hidden='{{currentIndex1 !=1}}' src='/icon/menu-item1-active.png'></image>
+          <text>学校简介</text>
+        </view>
+        <view animation="{{animation2}}" class='menu-item menu-item2' bindtap='showHide2'>
+          <image hidden='{{currentIndex2 !=0}}' src='/icon/menu-item2.png'></image>
+          <image hidden='{{currentIndex2 !=1}}' src='/icon/menu-item2-active.png'></image>
+          <text>师资团队</text>
+        </view>
+        <view animation="{{animation3}}" class='menu-item menu-item3' bindtap='showHide3'>
+          <image hidden='{{currentIndex3 !=0}}' src='/icon/menu-item3.png'></image>
+          <image hidden='{{currentIndex3 !=1}}' src='/icon/menu-item3-active.png'></image>
+          <text>打卡</text>
+        </view>
+        <view animation="{{animation4}}" class='menu-item menu-item4' bindtap='showHide4'>
+          <image hidden='{{currentIndex4 !=0}}' src='/icon/menu-item4.png'></image>
+          <image hidden='{{currentIndex4 !=1}}' src='/icon/menu-item4-active.png'></image>
+          <text>食谱</text>
+        </view>
+      </view>
+
+      <view class='menu-btn' bindtap='animate'>
+        <image animation="{{animation5}}" hidden='{{currentIndex !=0}}' src='/icon/menu.png'></image>
+        <image animation="{{animation6}}" hidden='{{currentIndex !=1}}' src='/icon/cancel.png'></image>
+      </view>
+        
+    </view>
+  </view>
+  <view class='mask' wx:if='{{currentIndex !=0}}'></view>
